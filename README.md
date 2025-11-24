@@ -180,7 +180,7 @@ SELECT Category, COUNT(DISTINCT customer_id) as unique_shoppers
 FROM RetailSales_Info
 GROUP BY Category;
 ```
-
+</details>
 
 ## Key Insights & Final Thoughts
 Based on the analysis, the following patterns emerged:
