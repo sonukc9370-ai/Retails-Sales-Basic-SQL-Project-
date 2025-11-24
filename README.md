@@ -182,11 +182,27 @@ GROUP BY Category;
 ```
 </details>
 
-## Key Insights & Final Thoughts
+## 📊 Key Insights & Findings
 Based on the analysis, the following patterns emerged:
 
-1. **Peak Hours:** The majority of sales occur during the Afternoon shift, suggesting a need for higher staffing levels between 12 PM and 5 PM.
+1. **Peak Sales Hours:** The shift analysis revealed that Afternoon (12 PM - 5 PM) accounts for the highest volume of transactions, followed by Evening and Morning shifts.
 
-2. **Demographics:** The Beauty category is popular among a specific age demographic (Avg Age: ~XX), which can inform targeted ad campaigns.
+2. **Seasonal Trends:**  Monthly trend analysis using window functions identified specific months with peak average sales values for each year in the dataset.
 
-3. **Seasonality:** Sales spikes are consistent in specific months (identified in Query 2), indicating seasonal demand.
+3. **Customer Demographics:** Cross-tabulation analysis showed distinct purchasing patterns between gender groups across product categories.
+
+4. **Product Performance: ** Total sales and order volume analysis by category showed:
+   	Significant variation in average transaction values across categories
+    Different categories attract varying customer engagement levels
+
+5. **Age Demographics: Beauty Category Focus** The average age analysis for Beauty category customers provides insights into:
+   	Primary demographic for beauty products
+	Potential for age-targeted product lines
+	Opportunity gaps in underserved age segments
+
+
+## How to Use
+
+1. **Clone the Repository**: Clone this project repository from GitHub.
+2. **Set Up the Database**: Run the SQL scripts provided in the `Sql_Scripts` file to create and populate the database.
+3. **Run the Queries**: Use the SQL queries provided in the `Sql_Scripts` file to perform your analysis.
