@@ -165,7 +165,7 @@ SELECT Round(Avg(Age), 2) as Avg_Age FROM RetailSales_Info WHERE Category = 'Bea
 SELECT * FROM RetailSales_Info WHERE total_sale > 1000;
 ```
 
-### Q6. Top 5 Customers by Spending
+### Q8. Top 5 Customers by Spending
 ```sql
 SELECT customer_id, SUM(total_sale) as total_spend
 FROM RetailSales_Info
@@ -174,9 +174,19 @@ ORDER BY total_spend DESC
 LIMIT 5;
 ```
 
-### Q7. Unique Customers per Category
+### Q9. Unique Customers per Category
 ```sql
 SELECT Category, COUNT(DISTINCT customer_id) as unique_shoppers
 FROM RetailSales_Info
 GROUP BY Category;
 ```
+
+
+## Key Insights & Final Thoughts
+Based on the analysis, the following patterns emerged:
+
+1. **Peak Hours:** The majority of sales occur during the Afternoon shift, suggesting a need for higher staffing levels between 12 PM and 5 PM.
+
+2. **Demographics:** The Beauty category is popular among a specific age demographic (Avg Age: ~XX), which can inform targeted ad campaigns.
+
+3. **Seasonality:** Sales spikes are consistent in specific months (identified in Query 2), indicating seasonal demand.
